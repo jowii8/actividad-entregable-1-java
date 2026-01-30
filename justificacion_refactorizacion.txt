@@ -1,0 +1,29 @@
+JUSTIFICACIÓN DE LA REFACTORIZACIÓN
+
+Se ha refactorizado el código original para mejorar su claridad, legibilidad y mantenimiento. 
+Los cambios realizados son los siguientes:
+
+1. Cambio de nombres de clase y variables:
+   - La clase pasó de llamarse 'p' a 'Main', que describe mejor su función principal.
+   - Las variables se renombraron de 'a', 'b', 'c' a nombres descriptivos como 'max', 'count' o 'average'.
+
+2. Separación de responsabilidades en métodos:
+   - Se creó el método findMax() para obtener el valor máximo.
+   - Se creó el método isRepeated() para comprobar si el máximo se repite.
+   - Se creó el método calculateAverage() para calcular la media del array.
+   Esto evita repetir código y facilita la lectura.
+
+3. Eliminación de código innecesario:
+   - Se eliminaron variables auxiliares que solo servían para flags.
+   - Se sustituyó la lógica confusa de condicionales por operadores claros (por ejemplo, usar boolean en lugar de 0 y 1).
+
+4. Documentación Javadoc:
+   - Cada método ahora tiene su descripción, lo que permite entender su función sin leer todo el código.
+
+5. Uso de estructuras más claras:
+   - Se emplearon bucles for-each cuando era posible para simplificar la sintaxis.
+   - Se mantiene la funcionalidad original, pero ahora el código es más legible y fácil de mantener.
+
+Resultado:
+- El programa sigue funcionando igual: imprime si el máximo se repite, calcula la media y muestra "BIEN" o "MAL".
+- Sin embargo, ahora el código es más limpio, entendible y modular, lo que facilita futuras modificaciones.
